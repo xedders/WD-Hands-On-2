@@ -118,3 +118,54 @@ html, body {
     border: solid 3px #ffffff;
   }
 }
+.button-58 {
+  position: absolute;
+  align-items: center;
+  background-color: #EF4135;
+  border: 2px solid #EF4135;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   bottom: 25%;
+  left: 10%;
+}
+
+.button-58:focus {
+  color: #171e29;
+}
+
+.button-58:hover {
+  background-color: #c5352b;
+  border-color: #c5352b;
+  fill: #c5352b;
+}
+
+.button-58:active {
+  background-color: #c5352b;
+  border-color: #c5352b;
+  fill: #c5352b;
+}
+
+@media (min-width: 768px) {
+  .button-58 {
+    min-width: 170px;
+  }
+}
