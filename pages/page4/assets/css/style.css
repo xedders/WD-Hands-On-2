@@ -1,0 +1,129 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    background: #2c3e50;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdownmenu {
+    position: relative;
+    margin: 0; 
+    background: #222222;
+  }
+  .dropdownmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center align the menu items */
+  }
+  .dropdownmenu li {
+    position: relative;
+  }
+  .dropdownmenu a {
+    color: #FFFFFF;
+    display: block;
+    font: bold 12px/20px sans-serif;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+  }
+  .dropdownmenu li:hover a {
+    background: #000000;
+  }
+  #submenu {
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    background: gray;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000; 
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    width: 100px; 
+  }
+  .dropdownmenu li:hover #submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #submenu li {
+    width: 100%;
+  }
+  #submenu a {
+    background-color: #000000;
+  }
+  #submenu a:hover {
+    background: #DF4B05;
+  }
+  
+  /* Card Styling */
+  .card {
+    width: 350px;
+    padding: 30px;
+    background: #1abc9c;
+    margin: 20px auto; /* Center the card horizontally and provide some space from the top */
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  .card:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-10px) scale(1.02);
+  }
+  .card:hover .entry-title {
+    background-position: -100% 0;
+  }
+  .entry-title {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #16a085 50%);
+    background-size: 200%;
+    background-position: 0 0;
+    display: inline;
+    transition: 0.5s ease-in-out;
+    font-family: raleway, arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .entry-title a {
+    color: white;
+    text-decoration: none;
+  }
+  small {
+    margin-top: 20px;
+    display: block;
+    font-family: raleway, arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+  }
+  small a {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+  }
+  span {
+    display: block;
+    margin-top: 10px;
+    font-family: raleway, arial, sans-serif;
+    font-weight: 700;
+    color: #16a085;
+  }
+  span a {
+    color: white;
+  }
+  
+  

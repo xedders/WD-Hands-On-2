@@ -13,7 +13,7 @@ body {
     width: 360px;
     height: 400px;
     background: #000;
-    z-index: 10; /* Set a lower z-index value */
+    z-index: 10; 
 }
 
 .card .image {
@@ -42,7 +42,7 @@ body {
     transition: .5s;
     transform-origin: left;
     transform: perspective(2000px) rotateY(-90deg);
-    z-index: 20; /* Ensure this is above the card image */
+    z-index: 20;
 }
 
 .card:hover .details {
@@ -109,7 +109,7 @@ body {
 .dropdownmenu {
     position: relative;
     margin: 0; 
-    z-index: 100; /* Ensure this is above the card */
+    z-index: 100; 
 }
 
 .dropdownmenu ul {
@@ -148,7 +148,7 @@ body {
     background: gray;
     opacity: 0;
     visibility: hidden;
-    z-index: 101; /* Ensure this is above the dropdownmenu */
+    z-index: 101; 
     transition: opacity 0.25s ease, visibility 0.25s ease;
     width: 100%; 
 }
