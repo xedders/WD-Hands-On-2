@@ -370,7 +370,7 @@ img {
     transition: 0.3s ease;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     right: 200px;
-    top: 20px;
+    top: 500px;
 }
 
 .entry-title {
@@ -425,7 +425,7 @@ span a {
 .property-card {
     height: 18em;
     width: 14em;
-    top: 700px;
+    top: 1200px;
     right: 800px;
     display: flex;
     flex-direction: column;
@@ -470,3 +470,62 @@ span a {
     left: 1em;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+/*dropdown menu*/
+  .dropdownmenu {
+    position: relative;
+    margin: 0; 
+    background: #222222;
+  }
+  .dropdownmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center align the menu items */
+  }
+  .dropdownmenu li {
+    position: relative;
+  }
+  .dropdownmenu a {
+    color: #FFFFFF;
+    display: block;
+    font: bold 12px/20px sans-serif;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+  }
+  .dropdownmenu li:hover a {
+    background: #000000;
+  }
+  #submenu {
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    background: gray;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000; 
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    width: 100px; 
+  }
+  .dropdownmenu li:hover #submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #submenu li {
+    width: 100%;
+  }
+  #submenu a {
+    background-color: #000000;
+  }
+  #submenu a:hover {
+    background: #DF4B05;
+  }
+  
