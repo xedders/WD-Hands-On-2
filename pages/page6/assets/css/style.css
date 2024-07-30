@@ -36,7 +36,7 @@ body {
 }
 
 /* Card Styles */
-.card, .card1, .card4 {
+.card, .card1, .card4, .card5 {
     color: inherit;
     cursor: pointer;
     width: 200px;
@@ -46,15 +46,16 @@ body {
     perspective: 1000px;
     margin: 200px;
     position: relative;
-    top: -1000px;
+    top: 0;
+   right: 500px;
 }
 @media screen and (max-width: 800px) {
-    .card, .card1, .card4 {
+    .card, .card1, .card4, .card5 {
         width: calc(50% - 2rem);
     }
 }
 @media screen and (max-width: 500px) {
-    .card, .card1, .card4 {
+    .card, .card1, .card4, .card5 {
         width: 100%;
     }
 }
@@ -206,7 +207,7 @@ h2:after {
     margin-bottom: -2px;
     height: 100px;
     left: 0;
-    right: 0;
+    right: 10px;
     background: #373d47;
 }
 .cards,
@@ -217,7 +218,8 @@ h2:after {
 .news .card {
     margin: 200px;
     width: 280px;
-    height: 10px;
+    height: 400px;
+    right: 500px;
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0,0,0,0.8);
     transform-origin: center top;
@@ -326,7 +328,27 @@ h2:after {
     color: white;
 }
 /*card 3 design*/
-body, html, .image-holder {
+.card3 {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    background: #3498db;
+    margin: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 0;
+}
+
+.card3 .image-holder {
+    max-width: 100%;
+    width: 500px;
+    position: relative;
+    top: 0;
+}
+
+/*card 3 design*/
+.image-holder {
     max-width: 320px;
     width: 500px;
     position: absolute;
@@ -338,16 +360,17 @@ img {
     height: auto;
 }
 
+
 /*card 4 design*/
 .card4 {
     width: 350px;
     padding: 30px;
     background: #1abc9c;
-    margin: 20px auto; /* Center the card horizontally and provide some space from the top */
+    margin: 200px auto; /* Center the card horizontally and provide some space from the top */
     transition: 0.3s ease;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  left: 100px;
-  top: 20px;
+    right: 200px;
+    top: 20px;
 }
 
 .entry-title {
@@ -384,4 +407,66 @@ span {
 }
 span a {
     color: white;
+}
+
+/*card 5 design*/
+.card5 {
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    background: #f2f2f2;
+    margin: 200px;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 0;
+}
+
+.property-card {
+    height: 18em;
+    width: 14em;
+    top: 700px;
+    right: 800px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+.property-image {
+    height: 6em;
+    width: 14em;
+    padding: 1em 2em;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Bottom Card Section */
+.property-description {
+    background-color: #FAFAFC;
+    height: 12em;
+    width: 12em;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+/* Social Icons */
+.property-social-icons {
+    width: 1em;
+    height: em;
+    background-color: black;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
