@@ -75,7 +75,6 @@ body {
     width: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transform-style: preserve-3d;
     transition: ease-in-out 600ms;
 }
 
@@ -222,9 +221,7 @@ h2:after {
     right: 500px;
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0,0,0,0.8);
-    transform-origin: center top;
-    transform-style: preserve-3d;
-    transform: translateZ(0);
+ 
     transition: 0.3s;
 }
 .cards .card img,
@@ -254,7 +251,7 @@ h2:after {
     top: -90%;
     left: -20px;
     opacity: 0.1;
-    transform: rotate(45deg);
+
     background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
     transition: 0.3s;
 }
@@ -304,7 +301,6 @@ h2:after {
     box-shadow: 0 0 2px rgba(0,0,0,0.2);
     background: rgba(6,18,53,0.6);
     opacity: 0;
-    transform: scale(1.15);
     transition: 0.2s;
 }
 .news .article figcaption h3 {
@@ -316,12 +312,10 @@ h2:after {
 .news .article:focus img,
 .news .article:active img {
     filter: blur(3px);
-    transform: scale(0.97);
 }
 .news .article:focus figcaption,
 .news .article:active figcaption {
     opacity: 1;
-    transform: none;
 }
 .h2 {
     text-align: center;
@@ -370,7 +364,7 @@ img {
     transition: 0.3s ease;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     right: 200px;
-    top: 500px;
+    top: 800px;
 }
 
 .entry-title {
@@ -425,7 +419,7 @@ span a {
 .property-card {
     height: 18em;
     width: 14em;
-    top: 1200px;
+    top: 1400px;
     right: 800px;
     display: flex;
     flex-direction: column;
