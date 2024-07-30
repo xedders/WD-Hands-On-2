@@ -364,7 +364,7 @@ img {
     transition: 0.3s ease;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     right: 200px;
-    top: 800px;
+    top: 1000px;
 }
 
 .entry-title {
@@ -419,7 +419,7 @@ span a {
 .property-card {
     height: 18em;
     width: 14em;
-    top: 1400px;
+    top: 1600px;
     right: 800px;
     display: flex;
     flex-direction: column;
