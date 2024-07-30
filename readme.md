@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="../../xedders/WD-Hands-On-2/assets/img/Logo (1).png" alt="Logo" width="130" height="100">
+    <img src="../../xedders/WD-Hands-On-2/assets/img/Logo (1).png" alt="Logo (1)" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Hands On 2</h3>
