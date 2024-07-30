@@ -46,7 +46,7 @@ html {
     perspective: 1000px;
     margin: 200px;
     position: relative;
-    top: 100px;
+    top: -1000px;
   }
   @media screen and (max-width: 800px) {
     .card, .card1 {
@@ -202,7 +202,7 @@ html {
   h2:after {
     content: '';
     z-index: 1;
-    bottom: 50%;
+    bottom: 50px;
     margin-bottom: -2px;
     height: 100px;
     left: 0;
@@ -215,7 +215,7 @@ html {
   }
   .cards .card,
   .news .card {
-    margin: 20px;
+    margin: 200px;
     width: 280px;
     height: 10px;
     overflow: hidden;
@@ -337,3 +337,50 @@ html {
     max-width: 100%;
     height: auto;
   }
+  /*card 4 design*/
+  .card {
+      width: 350px;
+      padding: 30px;
+      background: #1abc9c;
+      margin: 200px; /* Center the card horizontally and provide some space from the top */
+      transition: 0.3s ease;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    left: 200px;
+    }
+   
+   
+    .entry-title {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #16a085 50%);
+      background-size: 200%;
+      background-position: 0 0;
+      display: inline;
+      transition: 0.5s ease-in-out;
+      font-family: raleway, arial, sans-serif;
+      text-transform: uppercase;
+    }
+    .entry-title a {
+      color: white;
+      text-decoration: none;
+    }
+    small {
+      margin-top: 20px;
+      display: block;
+      font-family: raleway, arial, sans-serif;
+      color: white;
+      text-transform: uppercase;
+    }
+    small a {
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+    span {
+      display: block;
+      margin-top: 10px;
+      font-family: raleway, arial, sans-serif;
+      font-weight: 700;
+      color: #16a085;
+    }
+    span a {
+      color: white;
+    }
